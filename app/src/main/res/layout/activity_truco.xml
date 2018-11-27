@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TrucoActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Truco"
+        android:textSize="25dp"
+        android:layout_marginBottom="30dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jogador 1: "/>
+
+        <TextView
+            android:id="@+id/textJogador1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="esperando jogador 1..."/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jogador 2: "/>
+
+        <EditText
+            android:id="@+id/textJogador2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="esperando jogador 2..."
+            android:layout_marginBottom="30px"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pontos jogador 1: "/>
+
+        <TextView
+            android:id="@+id/textPonto1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pontos jogador 2: "/>
+
+        <TextView
+            android:id="@+id/textPonto2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnPonto1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:onClick="ponto1"
+            android:text="+1 jogador 1" />
+
+        <Button
+            android:id="@+id/btnPonto2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="30dp"
+            android:onClick="ponto2"
+            android:text="+1 jogador 2" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_gravity="center"
+        android:layout_marginTop="50px"
+        android:textSize="35dp"/>
+
+    <Button
+        android:id="@+id/btnTruco"
+        android:onClick="truco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pedir Truco"
+        android:textSize="30dp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/buttonJogar"
+        android:onClick="jogarNovamente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Novo Jogo"
+        android:layout_marginTop="50px"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/buttonAbandonar"
+        android:onClick="voltarMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu inicial"
+        android:layout_gravity="center" />
+</LinearLayout>

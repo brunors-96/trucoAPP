@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "61983937362",
+    "firebase_url": "https://trucoapp-4836e.firebaseio.com",
+    "project_id": "trucoapp-4836e",
+    "storage_bucket": "trucoapp-4836e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:61983937362:android:b707f27bb7b03e01",
+        "android_client_info": {
+          "package_name": "com.example.bruno.truco"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "61983937362-dphg7o542ler61s4qu7mujj3j7hjcu16.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTWSyt0GLW-Ifc2Se4IYUiDR0owM7UA38"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
